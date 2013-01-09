@@ -10,9 +10,9 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         <activity
-            android:name=".Main"
+            android:name=".Ouri"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,5 +21,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 </manifest>

@@ -3,22 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.example.ouri.LoginButton
-        android:id="@+id/button1"
-        android:src="@drawable/ic_launcher"
-        android:layout_width="wrap_content"
+    <RelativeLayout 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-         />
+        android:background="@color/main1" >
+
+        <Button
+             android:id="@+id/findbutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/addFriendbutton"	 
+	        android:text="Button"
+            />
+         <Button
+             android:id="@+id/addFriendbutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	
+	        android:layout_alignParentRight="true" 
+	        android:text="Button"
+            />
+    </RelativeLayout >
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
         android:text="Button" />
+
+    <com.example.ouri.LoginButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button2"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

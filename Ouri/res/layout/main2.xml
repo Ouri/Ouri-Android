@@ -7,39 +7,26 @@
 
     <RelativeLayout
         android:id="@+id/titlebar"
-        android:layout_width="fill_parent"
-        android:layout_height="64dip"
-        android:orientation="horizontal"
-        android:background="@drawable/bg_top"
+        style="@style/Titlebar"
          >
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            style="@style/Titlebar_logo"
             android:src="@drawable/title_ouri" />
 
         <ImageButton
             android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
+            style="@style/Titlebar_button"              
+            android:layout_alignParentRight="true"    
             android:src="@drawable/ic_addfriends"
-            android:background="#0000" 
-            android:layout_marginRight="15dip"/>
+            />
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/imageButton1"
+            style="@style/Titlebar_button"    
+            android:layout_toLeftOf="@+id/imageButton1"          
             android:src="@drawable/ic_search"
-            android:background="#0000"
-            android:layout_marginRight="15dip"
              />
 
     </RelativeLayout>
@@ -101,54 +88,32 @@
 
  <LinearLayout
      android:id="@+id/belowbar"
-     android:layout_width="fill_parent"
-     android:layout_height="74dip"
-     android:background="@drawable/bg_under"
-     android:gravity="bottom" >
+     style="@style/BelowBar"
+     >
 
      <ImageButton
          android:id="@+id/imageButton3"
-         android:layout_width="0dip"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:layout_marginBottom="12dip"
-         android:background="#0000"
+         style="@style/BelowButton"
          android:src="@drawable/ic_my" />
 
      <ImageButton
          android:id="@+id/imageButton4"
-         android:layout_width="0dip"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:layout_marginBottom="12dip"
-         android:background="#0000"
+         style="@style/BelowButton"
          android:src="@drawable/ic_group" />
 
      <ImageButton
          android:id="@+id/imageButton5"
-         android:layout_width="0dip"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:layout_marginBottom="12dip"
-         android:background="#0000"
+         style="@style/BelowButton"
          android:src="@drawable/ic_under_search" />
 
      <ImageButton
          android:id="@+id/imageButton7"
-         android:layout_width="0dip"
-         android:layout_height="wrap_content"
-         android:layout_marginBottom="12dip"
-         android:layout_weight="1"
-         android:background="#0000"
+         style="@style/BelowButton"
          android:src="@drawable/ic_setting" />
 
      <ImageButton
          android:id="@+id/imageButton6"
-         android:layout_width="0dip"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:layout_marginBottom="12dip"
-         android:background="#0000"
+         style="@style/BelowButton"
          android:src="@drawable/ic_message" />
 
  </LinearLayout>

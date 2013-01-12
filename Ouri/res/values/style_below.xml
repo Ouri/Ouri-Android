@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BelowBar">         
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">74dip</item>
+        <item name="android:background">@drawable/bg_under</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="BelowButton" >
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#0000</item>
+    </style>    
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <RelativeLayout
+        android:id="@+id/titlebar"
+        style="@style/Titlebar"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/Titlebar_logo"
+            android:src="@drawable/title_ouri" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            style="@style/Titlebar_button"              
+            android:layout_alignParentRight="true"    
+            android:src="@drawable/ic_addfriends"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            style="@style/Titlebar_button"    
+            android:layout_toLeftOf="@+id/imageButton1"          
+            android:src="@drawable/ic_search"
+             />
+
+    </RelativeLayout>
+    
+        <RelativeLayout 
+ android:id="@+id/edit"
+  android:layout_width="fill_parent" 
+  android:layout_height="0px"
+  android:layout_weight="3"
+   >
+    
+     
+ </RelativeLayout>
+       
+       
+       
+     <LinearLayout
+     android:id="@+id/belowbar"
+     style="@style/BelowBar"
+     >
+
+     <ImageButton
+         android:id="@+id/imageButton3"
+         style="@style/BelowButton"
+         android:src="@drawable/ic_my" />
+
+     <ImageButton
+         android:id="@+id/imageButton4"
+         style="@style/BelowButton"
+         android:src="@drawable/ic_group" />
+
+     <ImageButton
+         android:id="@+id/imageButton5"
+         style="@style/BelowButton"
+         android:src="@drawable/ic_under_search" />
+
+     <ImageButton
+         android:id="@+id/imageButton7"
+         style="@style/BelowButton"
+         android:src="@drawable/ic_setting" />
+
+     <ImageButton
+         android:id="@+id/imageButton6"
+         style="@style/BelowButton"
+         android:src="@drawable/ic_message" />
+
+ </LinearLayout>   
+
+</LinearLayout>

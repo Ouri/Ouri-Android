@@ -69,9 +69,9 @@ public class LoginButton extends ImageButton {
         
         setBackgroundColor(Color.TRANSPARENT);
         setAdjustViewBounds(true);
-        setImageResource(fb.isSessionValid() ?
-                         R.drawable.ic_launcher : 
-                         R.drawable.ic_action_search);
+        /*setImageResource(fb.isSessionValid() ?
+                         R.drawable.btn_loginfacebook :
+                         R.drawable.btn_loginfacebook	 );*/
         drawableStateChanged();
         
         SessionEvents.addAuthListener(mSessionListener);

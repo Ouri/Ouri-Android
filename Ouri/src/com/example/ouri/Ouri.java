@@ -20,7 +20,6 @@ public class Ouri extends Activity {
 	private LoginButton mLoginButton;
 	private AsyncFacebookRunner mAsyncRunner;
     private final String awsAddress = "ec2-23-22-240-202.compute-1.amazonaws.com";
-    private final String awsIPAddress = "54.235.197.14";
     private ImageButton mSignUp;
     
     @Override
@@ -46,7 +45,6 @@ public class Ouri extends Activity {
         });*/
         
         mSignUp.setOnClickListener (new OnClickListener() {			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				

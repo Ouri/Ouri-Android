@@ -2,6 +2,7 @@ package com.example.ouri;
 
 import com.example.ouri.R;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -24,8 +25,10 @@ public class AddSignUpInfo extends Activity {
         nextstep.setOnClickListener (new OnClickListener() {			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				MakeNetworkMessage m = new MakeNetworkMessage(a);
-				m.test();
+				MakeNetworkMessage m = new MakeNetworkMessage();
+				//m.getTest();
+				//m.sendSignOn("test");
+				m.sendSchools();
 			}
 		});
     }   

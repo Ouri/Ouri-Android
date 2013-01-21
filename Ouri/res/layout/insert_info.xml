@@ -31,14 +31,14 @@
 
     </RelativeLayout>
     <RelativeLayout android:id="@+id/main" android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="3">
-        <EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@+id/textView1" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_marginTop="20dip" android:background="@drawable/rounded_textview" android:ems="10" android:hint="이름" android:inputType="textPersonName">
+        <EditText android:id="@+id/edit_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@+id/textView1" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_marginTop="20dip" android:background="@drawable/rounded_textview" android:ems="10" android:hint="이름" android:inputType="textPersonName">
             <requestFocus />
         </EditText>
-        <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/editText1" android:layout_below="@+id/editText1" android:layout_marginTop="8dip" android:text="실제 성함을 띄어쓰기 없이 입력해 주세요."/>
-        <EditText android:id="@+id/editText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView2" android:layout_alignRight="@+id/editText1" android:layout_below="@+id/textView2" android:layout_marginTop="18dp" android:background="@drawable/rounded_textview" android:ems="10" android:hint="핸드폰 번호" android:inputType="textPersonName"/>
-        <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/editText1" android:layout_alignRight="@+id/textView2" android:layout_below="@+id/editText2" android:layout_marginTop="8dip" android:text="핸드폰 번호는 저장되지 않으며 본인인증을 위해 확인합니다."/>
-        <EditText android:id="@+id/editText3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/editText2" android:layout_below="@+id/textView3" android:layout_marginTop="14dp" android:background="@drawable/rounded_textview" android:ems="10" android:hint="비밀번호" android:inputType="textPassword"/>
-        <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/editText3" android:layout_alignRight="@+id/textView3" android:layout_below="@+id/editText3" android:layout_marginTop="8dip" android:text="숫자와 영어를 조합한 비밀번호 6자리 이상 입력 바랍니다."/>
+        <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/edit_name" android:layout_below="@+id/edit_name" android:layout_marginTop="8dip" android:text="실제 성함을 띄어쓰기 없이 입력해 주세요."/>
+        <EditText android:id="@+id/edit_phonenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView2" android:layout_alignRight="@+id/edit_name" android:layout_below="@+id/textView2" android:layout_marginTop="18dp" android:background="@drawable/rounded_textview" android:ems="10" android:hint="핸드폰 번호" android:inputType="textPersonName"/>
+        <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/edit_name" android:layout_alignRight="@+id/textView2" android:layout_below="@+id/edit_phonenum" android:layout_marginTop="8dip" android:text="핸드폰 번호는 저장되지 않으며 본인인증을 위해 확인합니다."/>
+        <EditText android:id="@+id/edit_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/edit_phonenum" android:layout_below="@+id/textView3" android:layout_marginTop="14dp" android:background="@drawable/rounded_textview" android:ems="10" android:hint="비밀번호" android:inputType="textPassword"/>
+        <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/edit_password" android:layout_alignRight="@+id/textView3" android:layout_below="@+id/edit_password" android:layout_marginTop="8dip" android:text="숫자와 영어를 조합한 비밀번호 6자리 이상 입력 바랍니다."/>
         <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="39dp" android:text="Find Your Classmates!!" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#000"/>
 
         <ImageButton
@@ -52,11 +52,11 @@
             android:src="@drawable/btn_purple" />
 
         <EditText
-            android:id="@+id/txt_emailAddress"
+            android:id="@+id/edit_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView5"
-            android:layout_alignRight="@+id/editText3"
+            android:layout_alignRight="@+id/edit_password"
             android:layout_below="@+id/textView5"
             android:layout_marginTop="14dp"
             android:background="@drawable/rounded_textview"
